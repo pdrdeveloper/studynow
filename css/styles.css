@@ -1,0 +1,385 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Quicksand&display=swap');
+
+/* 
+- Paleta de cores
+-- #0095A8
+-- #13ADC1
+-- #3399FF
+-- #FFFFFF
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{ 
+    width: 100%;
+    background: linear-gradient(to bottom, #0095A8 ,#13ADC1);
+}
+
+nav {
+    width: 100%;
+    height: 10vh;
+    padding: 0 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+@media screen and (max-width:600px) {
+    nav {
+        justify-content: space-between;
+        padding: 0 20px;
+    }
+}
+
+nav h1 {
+    float: left;
+    cursor: pointer;
+    font-size: 32px;
+}
+
+nav h1 a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    transition: all .2s;
+}
+
+nav h1 a:hover {
+    color: rgba(255, 255, 255, 0.699);
+}
+
+nav ul {
+    list-style: none;
+    float: right;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 0 20px; 
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: all .2s;
+}
+
+nav ul li a:hover {
+    color: rgb(197, 197, 197);
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgb(197, 197, 197);
+}
+
+@media screen and (max-width:450px) {
+    nav ul li {
+        padding: 0 10px;
+    }
+    nav ul li a {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width:320px) {
+    nav ul li {
+        padding: 0 5px;
+    }
+    nav ul li a {
+        font-size: 12px;
+    }
+}
+
+.landPage {
+    width: 100%;
+    height: 90vh;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.landPage .textBox {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+.landPage .textBox .firstText {
+    display: block;
+    font-size: 64px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 12px;
+    margin-right: -12px;
+}
+.landPage .textBox .secondText {
+    display: block;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-right: -2px;
+}
+
+.scrollIndicator {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.scrollIndicator span {
+    display: block;
+    width: 32px;
+    height: 32px;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    border-right: 1px solid rgb(255, 255, 255);
+    transform: rotate(45deg);
+    margin: -20px;
+    animation: animate 2s infinite;
+}
+
+.scrollIndicator span:nth-child(2) {
+    animation-delay: -0.2s;
+}
+
+.scrollIndicator span:nth-child(3) {
+    animation-delay: -0.4s;
+}
+
+@keyframes animate {
+    0% {
+        opacity: 0;
+        transform: rotate(45deg) translate(-32px, -32px);
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: rotate(45deg) translate(32px, 32px);
+    }
+}
+
+.faqPage {
+    width: 100%;
+    height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.faqText {
+    width: 60%;
+    padding: 20px;
+    margin: auto;
+    text-align: center;
+}
+
+.faqPage h1 {
+    text-align: center;
+    font-size: 30px;
+    padding: 10px 0;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+}
+
+.faqPage p {
+    color: rgb(255, 255, 255);
+}
+
+.faqPage .faqQuestion {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.faqPage .faqAnswer {
+    font-size: 16px;
+}
+
+@media screen and (max-width:750px) {
+    .faqText {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:550px) {
+    .faqText {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .faqPage .faqQuestion {
+        font-size: 18px;
+        font-weight: bold;
+    }
+    
+    .faqPage .faqAnswer {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width:460px) {
+    .faqText {
+        padding: 5px;
+    }
+
+    .faqPage .faqQuestion {
+        font-size: 18px;
+        font-weight: bold;
+    }
+    
+    .faqPage .faqAnswer {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .faqText {
+        padding: 3px;
+    }
+
+    .faqPage .faqQuestion {
+        font-size: 16px;
+        font-weight: bold;
+    }
+    
+    .faqPage .faqAnswer {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width:320px) {
+    .faqText {
+        padding: 0px;
+    }
+
+    .faqPage .faqQuestion {
+        font-size: 15px;
+        font-weight: bold;
+    }
+    
+    .faqPage .faqAnswer {
+        font-size: 12px;
+    }
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+    background-color: #bbb;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #aaa;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.281);
+}
+
+::-webkit-scrollbar-track {
+    background-color: white;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.281);
+}
+
+.contentPage {
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.contentPage h1 {
+    text-align: center;
+    font-size: 30px;
+    padding: 15px 0;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+}
+  
+.content-table {
+    border-collapse: collapse;
+    margin: 20px auto;
+    font-size: 0.9em;
+    width: 80%;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.15);
+}
+
+.content-table thead tr {
+    background-color: #3399FF;
+    color: #ffffff;
+    text-align: left;
+    font-weight: bold;
+}
+
+.content-table th,
+.content-table td {
+    padding: 12px 15px;
+    width: 20%;
+    text-align: center;
+}
+
+.content-table tbody tr {
+    background-color: #ffffff;
+    border-bottom: 1px solid #dddddd;
+    transition: all .4s;
+}
+
+.content-table tbody tr:hover {
+    background-color: #dddddd;
+    cursor: pointer;
+}
+
+.content-table tbody tr:last-of-type {
+    border-bottom: 2px solid #3399FF;
+}
+
+@media screen and (max-width:500px) {
+    .content-table {
+        font-size: 0.5em;
+        font-weight: bold;
+        width: 90%;
+    }
+    
+    .content-table th,
+    .content-table td {
+        padding: 12px 18px;
+        width: 22%;
+    }
+}
+
+.tipsPage {
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.tipText {
+    width: 90%;
+    padding: 32px;
+    margin: auto;
+}
+
+.tipsPage h1 {
+    text-align: center;
+    font-size: 30px;
+    padding: 10px 0;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+}
+
+.tipsPage p {
+    color: rgb(255, 255, 255);
+}
+
+.tipsPage .tipTitle {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.tipsPage .tipContent {
+    font-size: 16px;
+}
