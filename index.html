@@ -33,7 +33,7 @@
     <section class="faqPage" id="faqPage">
         <div class="faqText">
             <h1>FAQ - Principais dúvidas</h1>
-            <p class="faqQuestion">Esse site foi feito para ajudar os estudantes de recuperação do 9° ano do Colégio Projeção Sobradinho.</p>
+            <p class="faqQuestion">Esse site foi feito para ajudar os estudantes do Colégio Projeção Sobradinho.</p>
             <br>
             <p class="faqQuestion">Como funciona o site?</p>
             <p class="faqAnswer">Dentro do nosso site, temos duas áreas: conteúdo e dicas.<br>
@@ -53,177 +53,80 @@
         </div>
     </section>
     <section class="contentPage" id="contentPage">
-        <h1>Conteúdos para a recuperação</h1>
-        <table class="content-table">
-            <thead>
-                <tr>
-                    <th>Matéria</th>
-                    <th>1° Tri</th>
-                    <th>2° Tri</th>
-                    <th>3° Tri</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Artes</td>
-                    <td>Conteúdo 1° Tri</td>
-                    <td>Conteúdo 2° Tri</td>
-                    <td>Conteúdo 3° Tri</td>
-                </tr>
-                <tr>
-                    <td>Biologia</td>
-                    <td>Conteúdo 1° Tri</td>
-                    <td>Conteúdo 2° Tri</td>
-                    <td>Conteúdo 3° Tri</td>
-                </tr>
-                <tr>
-                    <td>Espanhol</td>
-                    <td>Conteúdo 1° Tri</td>
-                    <td>Conteúdo 2° Tri</td>
-                    <td>Conteúdo 3° Tri</td>
-                </tr>
-                <tr>
-                    <td>Filosofia</td>
-                    <td>Conteúdo 1° Tri</td>
-                    <td>Conteúdo 2° Tri</td>
-                    <td>Conteúdo 3° Tri</td>
-                </tr>
-                <tr>
-                    <td>Física</td>
-                    <td>Conteúdo 1° Tri</td>
-                    <td>Conteúdo 2° Tri</td>
-                    <td>Conteúdo 3° Tri</td>
-                </tr>
-                <tr>
-                    <td>Gramática</td>
-                    <td>Conteúdo 1° Tri</td>
-                    <td>Conteúdo 2° Tri</td>
-                    <td>Conteúdo 3° Tri</td>
-                </tr>
-                <tr>
-                    <td>Geografia</td>
-                    <td>Conteúdo 1° Tri</td>
-                    <td>Conteúdo 2° Tri</td>
-                    <td>Conteúdo 3° Tri</td>
-                </tr>
-                <tr>
-                    <td>História</td>
-                    <td>Conteúdo 1° Tri</td>
-                    <td>Conteúdo 2° Tri</td>
-                    <td>Conteúdo 3° Tri</td>
-                </tr>
-                <tr>
-                    <td>Inglês</td>
-                    <td>Conteúdo 1° Tri</td>
-                    <td>Conteúdo 2° Tri</td>
-                    <td>Conteúdo 3° Tri</td>
-                </tr>
-                <tr>
-                    <td>Matemática</td>
-                    <td>Conteúdo 1° Tri</td>
-                    <td>Conteúdo 2° Tri</td>
-                    <td>Conteúdo 3° Tri</td>
-                </tr>
-                <tr>
-                    <td>Química</td>
-                    <td>Conteúdo 1° Tri </td>
-                    <td>Conteúdo 2° Tri</td>
-                    <td>Conteúdo 3° Tri</td>
-                </tr>
-                <tr>
-                    <td>Redação</td>
-                    <td>Conteúdo 1° Tri</td>
-                    <td>Conteúdo 2° Tri</td>
-                    <td>Conteúdo 3° Tri</td>
-                </tr>
-            </tbody>
-        </table>
+        <h1>Calculadora de Notas</h1>
+        <div class="calculator">
+            <input type="number" id="mtf1" placeholder="MTF1">
+            <input type="number" id="mtf2" placeholder="MTF2">    
+            <button class="bntInput" type="button" onclick="calcular()">Calcular nota</button>
+        </div>
+        <p id="aviso">Por favor, preencha todos os campos!</p>
+        <p id="resultado"></p>
     </section>
     <section class="tipsPage" id="tipsPage">
         <h1>Dicas para seu estudo</h1>
         <div class="tipText">
             <p class="tipTitle">
-                Primeira dica
+                1. Leia, mas escreva também
             </p>
             <p class="tipContent">
-                Faça pausas curtas entre uma disciplina e outra.            
+                O estudo feito só por meio da leitura não é tão eficiente. O estudante pode se pegar facilmente distraído no decorrer das páginas. Por isso, escreva! Faça esquemas, transcreva partes importantes e organize resumos. Quem escreve consegue assimilar melhor o conteúdo e tê-lo por mais tempo na mente. 
             </p><br> 
             <p class="tipTitle">
-                Segunda dica
+                2. Escreva à mão
             </p>
             <p class="tipContent">        
-                Escrever, rabiscar, desenhar é melhor que somente grifar ou usar marca-texto. Envolve mais músculos e nervos, consequentemente mais atividade cerebral.            
+                Com as pessoas totalmente adaptadas aos teclados dos computadores, escrever à mão pode soar meio arcaico ou ainda gerar um pouco de preguiça. No entanto, estudos mostram que, enquanto a pessoa escreve, uma linha de raciocínio é formada e a atenção naquilo que se escreve é bem maior do que se ela estivesse digitando.   
             </p><br> 
             <p class="tipTitle">
-                Terceira dica    
+                3. Afaste interferências
             </p>
             <p class="tipContent">
-                Quadros, mapas mentais e cartazes ajudam a memorizar pela visualização.            
+                A hora do estudo deve ser sagrada, por isso, afaste tudo que possa lhe chamar a atenção e desviar o foco. Se possível, desligue ou mantenha no silencioso aparelhos telefônicos, feche páginas da internet alheias ao conteúdo de estudo, desligue a televisão. Separe apenas o material de estudo e concentre-se nele.        
             </p><br> 
             <p class="tipTitle">
-                Quarta dica
+                4. Mapas mentais e uso de cores
             </p>
             <p class="tipContent">     
-                Faça simulados e provas passadas. Com o tempo é possível identificar um padrão que o examinador tem na formulação das questões.            
+                No tópico sobre escrever a mão, relatamos a importância dessa prática, mas não se trata de sair escrevendo todo trecho dito importante, pois, dessa forma, você escreveria outro livro, só que menor. O ideal é utilizar esquemas, os ditos mapas mentais: informações sucintas que se inter-relacionam com outras. E mais: usar cores. Setas coloridas, palavras grifadas em outro tom, “caixas de atenção”, que atraem o olhar do estudante para alguma informação em destaque.
             </p><br> 
             <p class="tipTitle">     
-                Quinta dica
+                5. Estude sozinho
             </p>
             <p class="tipContent">  
-                Treine redação. Leia sobre temas estratégicos e escreva entre 3 e 6 redações por semana.            
+                Estudar em grupo pode até parecer interessante no sentido de compartilhar saberes, mas, em um primeiro momento, é melhor que o estudante opte por realizar a atividade sozinho. Afinal, com os colegas, o estudo pode ser desfocado por conversas paralelas, e a qualidade do aprendizado, prejudicada. Para os professores, uma boa ideia é explicar a matéria para si mesmo, como se estivesse dando uma aula.
             </p><br> 
             <p class="tipTitle">
-                Sexta dica
+                6. Revise a matéria
             </p>
             <p class="tipContent">
-                Durma entre 6 e 8 horas por noite e considere fazer atividade física. Os exercícios físicos liberam dopamina e endorfina que regulam o funcionamento da sua principal ferramenta – o cérebro.             
-            </p><br> 
-            <p class="tipTitle">  
-                Sétima dica
-            </p>
-            <p class="tipContent">
-                Dúvidas adquiridas em aulas devem ser anotadas imediatamente para consultas posteriores em livros ou internet. Videoaulas podem ajudar em casa.            
-            </p><br> 
-            <p class="tipTitle">
-                Oitava dica
-            </p>
-            <p class="tipContent">
-                Estudante do Ensino Médio, as obras do PAS são suas aliadas. Não se engane! Seu concorrente está íntimo delas.             
+                De nada adianta você estudar um cronograma inteiro e só no final realizar a revisão. O processo de revisão deve ser contínuo, por isso, releia a matéria dada em sala de aula no mesmo dia. Além disso, tire um dia no final de semana para revisar a matéria da semana e realizar exercícios. Essa prática deixa seu cérebro mais acostumado à rotina.
             </p><br> 
             <p class="tipTitle">  
-                Nona dica
+                7. Organize o local de estudo
             </p>
             <p class="tipContent">
-                Estudar sem distrações SEMPRE será melhor que o contrário. Música somente se for instrumental.            
+                Antes de começar a maratona, deixe tudo que você precisa organizado e separado: livros, cadernos, canetas, computador. Estudar em um local onde as coisas estão bagunçadas pode tirar sua concentração. O simples fato de ter que procurar por uma caneta já pode desviar a sua atenção para outras coisas.
             </p><br> 
             <p class="tipTitle">
-                Décima dica
+                8. Faça um cronograma de estudo e respeite seu tempo
             </p>
             <p class="tipContent">
-                Ingerir água é obrigatório para quem estuda. Sono fora de hora e cansaço podem ser sintomas de cérebro desidratado.            
-            </p><br>
-            <p class="tipTitle">
-                Décima primeira dica
+                É extremamente fundamental que o estudante elabore um cronograma de estudo e, principalmente, que esse cronograma atenda o seu ritmo de estudos. Estudar com organização de tempo e conteúdo pode ser mais eficiente e gerar bons resultados. O estudo aleatório causa desconcentração, uma vez que não se segue uma rotina, e o cérebro acaba vendo cada dia uma coisa diferente. Além disso, é importante respeitar o seu tempo de estudo. É melhor você estudar três horas por dia com bastante concentração do que seis horas sem a atenção devida.
+            </p><br> 
+            <p class="tipTitle">  
+                9. Esteja fisicamente bem
             </p>
             <p class="tipContent">
-                Não perca a oportunidade de tirar dúvidas. Monitorias, plantões de dúvidas, etc. Sempre que puder, ensine. Ensinar é um ótimo jeito de aprender.
-            </p><br>
+                Esteja fisicamente bem ao iniciar os estudos. Alimente-se e durma bem. Estudar com fome ou sono não será proveitoso. É preciso ter energia para ter um bom rendimento. Atividades físicas regulares também podem ajudar nesse período.
+            </p><br> 
             <p class="tipTitle">
-                Décima segunda dica
+                10. Crie um “ritual” e mentalize a rotina daquele dia
             </p>
             <p class="tipContent">
-                Grupos de WhatsApp só ajudam quando pequenos (até 4 participantes) que tem objetivo e entusiasmo parecidos. Pode ser um ótimo canal de compartilhamento de materiais, ideias e incentivo.           
-            </p><br>
-            <p class="tipTitle">
-                Última dica
-            </p>
-            <p class="tipContent">
-                Descubra o melhor jeito de estudar que te dê resultados concretos. Acredite no seu método.
-            </p><br>
-            <p class="tipTitle">
-                Dicas por Antônio Guilherme Soares - Coordenador Pedagógico do Colégio Projeção Sobradinho
+                Todo dia antes de começar a estudar, crie um pequeno ritual, seja levar uma jarra de água para a mesa, seja organizar os livros de acordo com o que se vai estudar no dia. Sente-se, respire fundo e mentalize todo o conteúdo que deverá ser visto, a sequência de estudos, os exercícios. Dessa maneira, seu cérebro irá se acostumar que a partir daquele momento não tem brincadeira mais, é hora de estudar.                
             </p>
         </div>
-    </section>
+    </section>    
+    <script src="js/script.js"></script>
 </body>
 </html>
